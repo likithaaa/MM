@@ -21,21 +21,25 @@ let getRecipe = () => {
                 $('.container').html(`
                 <h3> ${recipes[0].title} </h3>
                 <img src="${recipes[0].image}">
+        
                 `)
 
                 $('.container2').html(`
                 <h3> ${recipes[1].title} </h3>
                 <img src="${recipes[1].image}">
+               
                 `)
 
                 $('.container3').html(`
                 <h3> ${recipes[2].title} </h3>
                 <img src="${recipes[2].image}">
+               
                 `)
 
                 $('.container4').html(`
                 <h3> ${recipes[3].title} </h3>
                 <img src="${recipes[3].image}">
+               
                 `)
 
                 $('.container5').html(`

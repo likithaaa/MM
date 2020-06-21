@@ -20,14 +20,18 @@ h2 {
     font-size: 30px;
 }
 
+/* .main {
+    display: flex;
+    justify-content: space-evenly;
+} */
 .container, .container2, .container3, .container4, .container5 {
     text-align: center;
     color: white;
     display: flex;
     display: inline-block;
-    flex-direction: center;
-    align-items: center;
-    padding: 15px;
+    justify-content: center;
+    padding-right: 50px;
+    margin: auto;
 }
 
 input {
@@ -59,19 +63,32 @@ button:hover {
 } 
 
 #slider {
-    width: 700px;
-    height: 250px;
+    width: 1000px;
+    height: 200px;
     position: absolute;
-    transform: translate(50%, 20%);
-    background-image: url('./7.jpg');
-    animation: slider 20s infinite linear;
+    transform: translate(30%, 20%);
+    background-image: url('./images/1.jpg');
+    animation: slider 40s infinite ;
+    background-image: cover;
 }
 
 @keyframes slider {
-    0% {background-image: url('./2')}
-    25% {background-image: url('./1.png')}
-    50% {background-image: url('./4.jpg') }
-    70% {background-image: url('./5.jpg') }
-    100% {background-image: url('./8.jpeg') }
-
-}
+    0% {
+        background-image: url('./images/2.jpg');
+        background-image: stretch;
+    }
+    25% {
+        background-image: url('./images/3.jpeg');
+        background-image: stretch;
+    }
+    50% {background-image: url('./images/4.jpg'); 
+        background-image: stretch;
+    }
+    70% {background-image: url('./images/5.jpg'); 
+        background-image: stretch;
+    }
+    100% {
+        background-image: url('./images/6.jpg');
+    background-image: stretch;
+    }
+}  
