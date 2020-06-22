@@ -29,9 +29,8 @@ h2 {
     color: white;
     display: flex;
     display: inline-block;
-    justify-content: center;
-    padding-right: 50px;
-    margin: auto;
+    align-items: flex-end;
+    
 }
 
 input {
@@ -66,7 +65,7 @@ button:hover {
     width: 1000px;
     height: 200px;
     position: absolute;
-    transform: translate(30%, 20%);
+    transform: translate(20%, 20%);
     background-image: url('./images/1.jpg');
     animation: slider 40s infinite ;
     background-image: cover;
@@ -92,3 +91,8 @@ button:hover {
     background-image: stretch;
     }
 }  
+
+
+
+
+
