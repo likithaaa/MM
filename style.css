@@ -5,6 +5,13 @@ body {
     height: 8000;
     background-size: cover;
     background-position-y: 36px;
+    color: white;
+}
+
+#aboutUs {
+    background-position-y: 0px;
+    text-align: center;
+    font-size: 25px;
 }
 
 h1, h2 {
@@ -22,13 +29,10 @@ h2 {
     font-size: 30px;
 }
 
-/* .main {
-    display: flex;
-    justify-content: space-evenly;
-} */
 #container {
     text-align: center;
     color: white;
+    padding: 25px;
 }
 
 input {
@@ -65,50 +69,54 @@ button:hover {
     position: fixed;
     top: 0;
     width: 100%;
+    
 }
 
 #navbar a {
- float: left;
- display: block;
- color: rgb(26, 25, 25);
- font-size: 15px;
- padding: 10px 15px 10px 15px;
-margin:auto;
-text-decoration: none;
+    float: left;
+    display: block;
+    color: rgb(26, 25, 25);
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+    margin:auto;
+    text-decoration: none;
 }
 
 #slider {
     width: 1000px;
-    height: 200px;
+    height: 130px;
     position: absolute;
-    transform: translate(30%, 20%);
+    border: 2px solid white;
+    transform: translate(30%);
     background-image: url('./images/1.jpg');
-    animation: slider 40s infinite ;
+    animation: slider 40s infinite;
     background-image: cover;
 }
 
 @keyframes slider {
     0% {
         background-image: url('./images/2.jpg');
-        background-image: stretch;
     }
     25% {
         background-image: url('./images/3.png');
-        background-image: stretch;
     }
     50% {background-image: url('./images/4.jpg'); 
-        background-image: stretch;
     }
     70% {background-image: url('./images/5.jpg'); 
-        background-image: stretch;
     }
     100% {
         background-image: url('./images/6.jpg');
-    background-image: stretch;
     }
-}  
+}   
 
-
-
-
-
+@media (max-width: 750px) {
+    body {
+    background-image: url("./images/bg1.png");
+    width: 50%;
+    height: 50%;
+    }
+    #slider {
+        width: 200px;
+        height: 60px;
+    }
+}
